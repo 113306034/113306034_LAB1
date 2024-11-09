@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<table border = 1>
+	<thead>
+		<tr>
+		<th colspan = 3>About -- 113306034</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td rowspan = 3>
+			<div align = center><img src = "S__15532045.jpg" width = 100 height = 100/></div><br>
+			<div align = center>personal photo</div></td>
+
+			<td colspan = 2>
+				<label>Name:
+					<input name = "name" type = "text"><br>
+				</label>
+				<form>
+					Gender:
+					<input type = "radio" name = "gender" value = "male">Male
+					<input type = "radio" name = "gender" value = "female">Female
+					<input type = "radio" name = "gender" value = "other">Other
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form action = "/action_page.php">
+					County:
+					<select name = "county">
+						<option value = Taipei>Taipei</option>
+						<option value = Tainan>Tainan</option>
+						<option value = Taichung>Taichung</option>
+						<option value = Taoyuan>Taoyuan</option>
+					</select>
+				</form>	
+			</td>
+
+			<td>
+				<form action = "/action_page.php">
+					<label for = "birthday">Birthday:</label>
+					<input type = "date" id = "birthday" name = "birthday">
+				</form>
+		</tr>
+
+		<tr>
+			<td colspan = 2>
+			<label>E-mail:
+					<input name = "mail" type = "text">
+			</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Hobby</td>
+			<td colspan = 2>
+				<form action = "action_page.php" method = "get">
+					<input type = "checkbox" name = "hobby" value = "Swimming">Swimming
+					<input type = "checkbox" name = "hobby" value = "Volleyball">Volleyball
+					<input type = "checkbox" name = "hobby" value = "Movie">Movie
+					<input type = "checkbox" name = "hobby" value = "Game">Game
+					<input type = "checkbox" name = "hobby" value = "Sleep">Sleep
+				</form>
+		</tr>
+
+		<tr>
+			<td>Skill</td>
+			<td colspan = 2>
+				<form action = "action_page.php" method = "get">
+					<input type = "checkbox" name = "skill" value = "Java">Java
+					<input type = "checkbox" name = "skill" value = "HTML">HTML
+					<input type = "checkbox" name = "skill" value = "Python">Python
+					<input type = "checkbox" name = "skill" value = "Microsoft Office">Microsoft Office
+					<input type = "checkbox" name = "skill" value = "Premiere">Premiere
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Say something</td>
+			<td colspan = 2>
+				<form>
+					<textarea rows = "4" cols = "50" placeholder = "Say something here."required></textarea>
+				</form>
+			</td>
+		</tr>
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<td colspan = 3>
+				<form method = "post" action = "http://www.deitel.com">
+					<input type = "submit" value = "提交">
+					<input type = "reset" value = "重設">
+				</form>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+
+
+
+</body>
+</html>
